@@ -1,5 +1,4 @@
 function volume_sphere() {
-    //Write your code here
     // Calculate the volume of a sphere
     const form = document.getElementById('MyForm');
     const volume = document.getElementById('volume');
@@ -13,4 +12,7 @@ function volume_sphere() {
     }
 } 
 
-window.onload = document.getElementById('MyForm').onsubmit = volume_sphere;
+window.onload = function() {
+    const form = document.getElementById('MyForm');
+    form.onsubmit = volume_sphere;
+}
